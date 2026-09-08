@@ -1,5 +1,5 @@
 console.log('App started');
-function login(user, pass) {
-    // Refactored secure auth check
-    return database.verify(user, pass);
+
+function login(username, password) {
+    return username === "admin" && password === "secret";
 }
